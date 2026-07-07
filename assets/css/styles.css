@@ -1309,3 +1309,94 @@ main .btn.secondary,
 @media(max-width:1000px){
   .gallery-grid{grid-template-columns:1fr}
 }
+
+
+/* FabLab gallery and expectations refinement */
+.expectations-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1rem;
+}
+.expectation-card{
+  background:#FFFFFF;
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1.15rem;
+  box-shadow:0 12px 28px rgba(2,10,28,.08);
+}
+.expectation-card h3{
+  margin:.35rem 0 .65rem;
+  font-size:1.18rem;
+  color:var(--navy);
+}
+.expectation-card ul{
+  margin:0;
+  padding-left:1.1rem;
+  display:grid;
+  gap:.48rem;
+}
+.expectation-card li{
+  color:var(--muted);
+  font-weight:700;
+}
+.expectation-label{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:.28rem .6rem;
+  background:#EAF3FF;
+  color:#1E3A8A;
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:950;
+}
+.expectation-card.warning .expectation-label{
+  background:#FFF7ED;
+  color:#9A3412;
+}
+.gallery-card{
+  padding:0;
+}
+.gallery-card img{
+  border-radius:18px;
+}
+.gallery-card figcaption{
+  display:none;
+}
+@media(max-width:1100px){
+  .expectations-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .expectations-grid{grid-template-columns:1fr}
+}
+
+
+/* FabLab hero visual + certification pathway */
+.fablab-hero-section{padding-top:0}
+.fablab-hero-layout{position:relative;z-index:1;padding:4rem 0;display:grid;grid-template-columns:minmax(320px,.9fr) minmax(420px,1.1fr);gap:1.8rem;align-items:center}
+.fablab-hero-copy p{max-width:60ch}
+.fablab-hero-visual{padding:0;overflow:hidden;position:relative;min-height:460px}
+.fablab-hero-visual img{width:100%;height:100%;display:block;object-fit:cover}
+.fablab-hero-overlay{position:absolute;left:1rem;right:1rem;bottom:1rem;padding:1rem 1.1rem;border-radius:18px;background:linear-gradient(180deg,rgba(7,23,43,.15),rgba(7,23,43,.88));color:#fff;backdrop-filter:blur(4px)}
+.fablab-hero-overlay h3{color:#fff;margin:.35rem 0 .35rem;font-size:1.35rem}
+.fablab-hero-overlay p{color:#D8E3EF}
+.pathway-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.pathway-column{position:relative;background:linear-gradient(180deg,#FFFFFF,#F8FAFC);color:var(--text);border:1px solid #DDE4EF;border-radius:20px;padding:1.2rem;box-shadow:var(--shadow-soft)}
+.pathway-column.required{border-color:rgba(200,162,74,.55);box-shadow:0 18px 34px rgba(200,162,74,.16)}
+.pathway-column.advanced{border-color:rgba(59,130,246,.28)}
+.pathway-step{display:inline-grid;place-items:center;width:2.25rem;height:2.25rem;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:950;margin-bottom:.75rem}
+.pathway-column h3{margin-bottom:.35rem}
+.pathway-column p{color:var(--muted);margin-bottom:.9rem}
+.pathway-chip-wrap{display:flex;flex-wrap:wrap;gap:.55rem}
+.pathway-chip{display:inline-flex;align-items:center;text-decoration:none;border-radius:999px;padding:.52rem .78rem;background:#EAF3FF;color:#123A72;font-weight:850;border:1px solid rgba(59,130,246,.18)}
+.pathway-chip:hover,.pathway-chip:focus{background:var(--gold);color:var(--navy);outline:none}
+@media(max-width:1100px){
+  .fablab-hero-layout{grid-template-columns:1fr}
+  .pathway-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .pathway-grid{grid-template-columns:1fr}
+  .fablab-hero-visual{min-height:320px}
+}

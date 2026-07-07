@@ -29,9 +29,9 @@
 
 <main id="main">
 
-<section class="page-hero">
-  <div class="container hero-grid fablab-hero-grid">
-    <div>
+<section class="page-hero fablab-hero-section">
+  <div class="container fablab-hero-layout">
+    <div class="fablab-hero-copy">
       <div class="eyebrow">CCA FabLab</div>
       <h1>Design. Fabricate. Test. Document.</h1>
       <p>
@@ -45,14 +45,14 @@
         <a class="btn secondary" href="#expectations">FabLab Expectations</a>
       </div>
     </div>
-    <aside class="card fablab-hero-media">
+    <figure class="fablab-hero-visual card">
       <img src="../assets/img/fablab/fablab-engineering-display.png" alt="CCA FabLab classroom with engineering drawings on the board and a CAD model displayed on the classroom screen.">
-      <div class="fablab-media-copy">
-        <span class="tag blue">Inside the Lab</span>
-        <h3>Professional habits in a student workspace</h3>
-        <p>Students use the FabLab to prototype, revise, inspect, and present their work using aerospace engineering habits.</p>
+      <div class="fablab-hero-overlay">
+        <span class="tag">Hero Visual</span>
+        <h3>Engineering documentation meets fabrication</h3>
+        <p>From board sketches to CAD models, the lab environment reinforces the full engineering workflow.</p>
       </div>
-    </aside>
+    </figure>
   </div>
 </section>
 
@@ -188,6 +188,59 @@
   </div>
 </section>
 
+<section class="container">
+  <div class="section-header">
+    <div>
+      <div class="eyebrow">Tool certification pathway</div>
+      <h2>A clear path to FabLab access</h2>
+      <p class="section-subtitle">Start with safety, build foundation skills, and then unlock more advanced fabrication pathways.</p>
+    </div>
+  </div>
+  <div class="pathway-grid">
+    <article class="pathway-column required">
+      <div class="pathway-step">1</div>
+      <h3>Required First</h3>
+      <p>Every student begins here before using FabLab equipment.</p>
+      <a class="pathway-chip" href="../certifications/engineering-safety.html">Engineering Safety</a>
+    </article>
+
+    <article class="pathway-column">
+      <div class="pathway-step">2</div>
+      <h3>Foundation Skills</h3>
+      <p>Build the core habits that support design, communication, and safe hand-tool work.</p>
+      <div class="pathway-chip-wrap">
+        <a class="pathway-chip" href="../certifications/engineering-drawings.html">Engineering Drawings</a>
+        <a class="pathway-chip" href="../certifications/fusion-cad-level-1.html">Fusion CAD Level 1</a>
+        <a class="pathway-chip" href="../certifications/hand-cutting-tools.html">Hand &amp; Cutting Tools</a>
+      </div>
+    </article>
+
+    <article class="pathway-column">
+      <div class="pathway-step">3</div>
+      <h3>Fabrication Tools</h3>
+      <p>After safety and foundational preparation, students can earn access to production tools.</p>
+      <div class="pathway-chip-wrap">
+        <a class="pathway-chip" href="../certifications/3d-printing.html">3D Printing</a>
+        <a class="pathway-chip" href="../certifications/laser-cutting.html">Laser Cutting</a>
+        <a class="pathway-chip" href="../certifications/drill-press.html">Drill Press</a>
+        <a class="pathway-chip" href="../certifications/soldering.html">Soldering</a>
+      </div>
+    </article>
+
+    <article class="pathway-column advanced">
+      <div class="pathway-step">4</div>
+      <h3>Advanced Pathways</h3>
+      <p>These certifications support more complex fabrication, design review, and professional workflow skills.</p>
+      <div class="pathway-chip-wrap">
+        <a class="pathway-chip" href="../certifications/cnc.html">CNC</a>
+        <a class="pathway-chip" href="../certifications/fusion-cad-level-2.html">Fusion CAD Level 2</a>
+        <a class="pathway-chip" href="../certifications/engineering-documentation.html">Engineering Documentation</a>
+        <a class="pathway-chip" href="../certifications/design-review.html">Design Review</a>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section class="light-section">
   <div class="container">
     <div class="section-header">
@@ -250,21 +303,51 @@
       <div>
         <div class="eyebrow">Student expectations</div>
         <h2>FabLab expectations</h2>
-        <p class="section-subtitle">These expectations help keep the lab safe, productive, and ready for meaningful engineering work.</p>
+        <p class="section-subtitle">Use this section as a quick checklist before, during, and after any FabLab work session.</p>
       </div>
     </div>
-    <article class="card">
-      <ul class="unit-meta-list">
-        <li>Use only tools you are certified and authorized to use.</li>
-        <li>Wear required PPE and follow posted procedures for every tool and machine.</li>
-        <li>Prepare your design files, materials, and engineering documentation before fabrication begins.</li>
-        <li>Keep your work area clean, organized, and safe throughout the entire process.</li>
-        <li>Stop and ask before changing machine settings, materials, or workflows you do not fully understand.</li>
-        <li>Report damaged tools, failed prints, material issues, and unsafe conditions immediately.</li>
-        <li>Document important decisions, testing results, revisions, and final outcomes in your engineering notebook.</li>
-        <li>Leave the FabLab ready for the next student or class.</li>
-      </ul>
-    </article>
+
+    <div class="expectations-grid">
+      <article class="expectation-card">
+        <span class="expectation-label">Before You Build</span>
+        <h3>Plan the work</h3>
+        <ul>
+          <li>Confirm you are certified for the tool or machine.</li>
+          <li>Prepare your design files, drawings, materials, and measurements.</li>
+          <li>Know the required PPE, setup steps, and safety limits.</li>
+        </ul>
+      </article>
+
+      <article class="expectation-card">
+        <span class="expectation-label">During Fabrication</span>
+        <h3>Work safely</h3>
+        <ul>
+          <li>Use only tools you are authorized to use.</li>
+          <li>Keep hands, loose items, and materials clear of hazards.</li>
+          <li>Stop and ask before changing settings, materials, or workflows.</li>
+        </ul>
+      </article>
+
+      <article class="expectation-card">
+        <span class="expectation-label">Engineering Habits</span>
+        <h3>Document decisions</h3>
+        <ul>
+          <li>Record important decisions, test results, and revisions.</li>
+          <li>Take photos of setups, failures, prototypes, and final results.</li>
+          <li>Use evidence to explain what changed and why.</li>
+        </ul>
+      </article>
+
+      <article class="expectation-card warning">
+        <span class="expectation-label">Stop & Report</span>
+        <h3>Protect the lab</h3>
+        <ul>
+          <li>Report damaged tools, failed prints, and unsafe conditions.</li>
+          <li>Clean your work area before leaving.</li>
+          <li>Leave the FabLab ready for the next student or class.</li>
+        </ul>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -279,31 +362,15 @@
   <div class="gallery-grid">
     <figure class="gallery-card">
       <img src="../assets/img/fablab/fablab-engineering-display.png" alt="FabLab classroom with engineering drawings on the board and a CAD model on the display.">
-      <figcaption>
-        <strong>Engineering display wall</strong>
-        <span>Annotated drawings and CAD visuals help connect design documentation to physical fabrication.</span>
-      </figcaption>
     </figure>
     <figure class="gallery-card">
       <img src="../assets/img/fablab/fablab-student-workstations.png" alt="Student workstations inside the CCA FabLab.">
-      <figcaption>
-        <strong>Student workstations</strong>
-        <span>Flexible bench space supports modeling, prototyping, inspection, and design review work.</span>
-      </figcaption>
     </figure>
     <figure class="gallery-card">
       <img src="../assets/img/fablab/fablab-room-overview.png" alt="Wide room overview of the CCA FabLab.">
-      <figcaption>
-        <strong>Room overview</strong>
-        <span>The layout gives students space to collaborate, build, and present engineering work.</span>
-      </figcaption>
     </figure>
     <figure class="gallery-card">
       <img src="../assets/img/fablab/fablab-aerospace-gallery-wall.png" alt="Aerospace-themed FabLab wall with science and engineering posters.">
-      <figcaption>
-        <strong>Aerospace inspiration wall</strong>
-        <span>Visuals and quotes reinforce curiosity, problem solving, and the mission of the engineering space.</span>
-      </figcaption>
     </figure>
   </div>
 </section>
