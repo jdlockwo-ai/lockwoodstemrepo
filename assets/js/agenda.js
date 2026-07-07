@@ -21,8 +21,7 @@ const els = {
   weekViewBtn: document.getElementById("weekViewBtn"),
   dateBadge: document.getElementById("dateBadge"),
   courseBadge: document.getElementById("courseBadge"),
-  lessonBadge: document.getElementById("lessonBadge"),
-  sheetBadge: document.getElementById("sheetBadge")
+  lessonBadge: document.getElementById("lessonBadge")
 };
 
 function courseName(course) {
@@ -241,7 +240,6 @@ function updateBadges(agenda) {
   els.dateBadge.textContent = viewMode === "week" ? `Week of ${shortDisplayDate(schoolWeekDates(currentDate)[0])}–${shortDisplayDate(schoolWeekDates(currentDate)[4])}` : displayDate(currentDate);
   els.courseBadge.textContent = courseName(currentCourse);
   els.lessonBadge.textContent = agenda ? lessonSummary(agenda) : "No agenda found";
-  if (els.sheetBadge) els.sheetBadge.textContent = getCsvUrl(currentCourse) ? "Google Sheet connected" : "Sheet URL missing";
 }
 
 function renderAgendaCard(title, content, extraClass = "") {

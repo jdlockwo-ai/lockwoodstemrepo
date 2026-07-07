@@ -1525,3 +1525,31 @@ body.agenda-fullscreen-active{
     width:100%;
   }
 }
+
+
+/* Agenda controls final cleanup */
+.agenda-status-updated{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+}
+.agenda-controls{
+  grid-template-columns:minmax(160px,1fr) 170px auto auto auto auto auto;
+}
+.agenda-controls .fullscreen-control{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#FFFFFF;
+}
+.agenda-controls .fullscreen-control:hover,
+.agenda-controls .fullscreen-control:focus{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:var(--navy);
+}
+.agenda-fullscreen-row{
+  display:none !important;
+}
+@media(max-width:1000px){
+  .agenda-controls{
+    grid-template-columns:1fr !important;
+  }
+}

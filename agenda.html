@@ -23,13 +23,6 @@
     </ul>
   </div>
 </header>
-
-<div class="agenda-fullscreen-row">
-  <button id="agendaFullscreenBtn" class="btn agenda-fullscreen-btn" type="button" aria-label="Open agenda in full screen">
-    Full Screen Agenda
-  </button>
-</div>
-
 <main id="main">
 
 <section class="page-hero agenda-hero">
@@ -41,10 +34,7 @@
         <a class="btn" href="#agendaPanel">View Today</a>
       </div>
     </div>
-    <aside class="card dark">
-      <h3></h3>
-    </aside>
-  </div>
+</div>
 </section>
 
 <section id="agendaPanel" class="agenda-app">
@@ -70,12 +60,12 @@
         <button id="prevBtn" type="button">Previous</button>
         <button class="primary" id="todayBtn" type="button">Today</button>
         <button id="nextBtn" type="button">Next</button>
+        <button id="agendaFullscreenBtn" class="fullscreen-control" type="button" aria-label="Open agenda in full screen">Full Screen</button>
       </div>
       <div class="agenda-status agenda-status-updated">
         <div class="agenda-badge" id="dateBadge">Loading date...</div>
         <div class="agenda-badge" id="courseBadge">Loading course...</div>
         <div class="agenda-badge" id="lessonBadge">Loading lesson...</div>
-        <div class="agenda-badge" id="sheetBadge">Loading sheet...</div>
       </div>
     </div>
     <div class="agenda-loading" id="agendaApp">Loading agenda...</div>
@@ -109,7 +99,7 @@
   }
 
   function updateButton(){
-    button.textContent = isFullScreen() ? 'Exit Full Screen' : 'Full Screen Agenda';
+    button.textContent = isFullScreen() ? 'Exit Full Screen' : 'Full Screen';
     button.setAttribute('aria-label', isFullScreen() ? 'Exit full screen agenda' : 'Open agenda in full screen');
   }
 
