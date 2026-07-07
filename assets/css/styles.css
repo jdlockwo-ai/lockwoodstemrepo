@@ -1400,3 +1400,46 @@ main .btn.secondary,
   .pathway-grid{grid-template-columns:1fr}
   .fablab-hero-visual{min-height:320px}
 }
+
+
+/* Updated Google Sheets-powered agenda page */
+.agenda-hero .hero-grid{grid-template-columns:minmax(0,1fr) minmax(300px,420px)}
+.agenda-panel-updated{padding:1.1rem}
+.agenda-status-updated{grid-template-columns:repeat(4,minmax(0,1fr))}
+.view-toggle{display:inline-flex;gap:.35rem;background:#FFFFFF;border:1px solid var(--line);border-radius:999px;padding:.35rem;align-self:stretch;align-items:center;justify-content:center}
+.view-btn{border:0;border-radius:999px;padding:.65rem 1rem;background:transparent;color:var(--navy);font-weight:950;cursor:pointer}
+.view-btn.active{background:var(--gold);box-shadow:0 8px 16px rgba(200,162,74,.2)}
+.agenda-controls button{border:1px solid rgba(11,31,58,.18);background:#FFFFFF;color:var(--navy);border-radius:999px;padding:.82rem 1rem;font-weight:950;cursor:pointer}
+.agenda-controls button.primary{background:var(--gold);border-color:var(--gold)}
+.agenda-controls button:hover,.agenda-controls button:focus{transform:translateY(-2px);box-shadow:var(--focus);outline:none}
+.agenda-loading,.agenda-empty-state{margin-top:1rem;background:#FFFFFF;color:var(--text);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-soft);padding:1.35rem}
+.agenda-empty-state h2{color:var(--navy);margin-bottom:.5rem}
+.muted-dark{color:var(--muted)}
+.agenda-display-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:1rem;margin-top:1rem}
+.agenda-main-card,.agenda-display-card,.agenda-week-card{background:#FFFFFF;color:var(--text);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-soft)}
+.agenda-main-card{padding:1.35rem;display:grid;gap:1rem}
+.agenda-card-topline{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:#1E3A8A;font-weight:950;text-transform:uppercase;letter-spacing:.06em;font-size:.78rem}
+.agenda-main-card h2{color:var(--navy);font-size:clamp(1.85rem,3vw,2.7rem);margin:0}
+.agenda-unit-pill{display:inline-flex;width:max-content;border-radius:999px;background:#EAF3FF;color:#1E3A8A;font-weight:950;padding:.35rem .72rem}
+.agenda-primary-block{background:#F8FAFC;border:1px solid var(--line);border-radius:18px;padding:1.1rem}
+.agenda-primary-block h3,.agenda-display-card h3{color:var(--navy);margin-bottom:.65rem}
+.agenda-main-footer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.agenda-main-footer>div{border:1px solid var(--line);border-radius:16px;padding:.9rem;background:#FFFFFF}
+.agenda-main-footer strong{display:block;color:var(--navy);margin-bottom:.4rem}
+.agenda-side-stack{display:grid;gap:1rem;align-content:start}
+.agenda-display-card{padding:1rem}
+.agenda-display-card.objectives{border-left:5px solid var(--green)}
+.agenda-display-card.materials{border-left:5px solid var(--blue)}
+.agenda-display-card.standards{border-left:5px solid var(--gold)}
+.agenda-display-card.notes{border-left:5px solid var(--gray)}
+.agenda-display-card.quote{border-left:5px solid var(--orange)}
+.agenda-link-box{margin-top:.75rem;padding:.75rem;border-radius:14px;background:#EFF6FF;border:1px solid #DBEAFE;word-break:break-word}
+.agenda-list{margin:.15rem 0 0 1.15rem;color:#334155}.agenda-list li{margin:.38rem 0}.content-text{white-space:pre-wrap;color:#334155}.quote-text{font-weight:850;color:#102033}.empty{color:var(--muted);font-style:italic}
+.agenda-week-display{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.9rem;margin-top:1rem}
+.agenda-week-card{overflow:hidden}.agenda-week-card.today{outline:3px solid rgba(200,162,74,.6)}
+.agenda-week-header{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#FFFFFF;padding:.9rem}
+.agenda-week-header h3{color:#FFFFFF;font-size:1.05rem}.agenda-week-header span{color:#D8E3EF;font-weight:800}
+.agenda-week-body{padding:.9rem;display:grid;gap:.55rem}.agenda-week-body strong{color:var(--navy)}.week-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:950;color:#1E3A8A;margin-top:.35rem}
+.agenda-help-section{padding-top:4.25rem}
+@media(max-width:1100px){.agenda-status-updated,.agenda-display-grid,.agenda-week-display{grid-template-columns:1fr}.agenda-main-footer{grid-template-columns:1fr}}
+@media(max-width:800px){.agenda-controls{grid-template-columns:1fr}.view-toggle{justify-content:flex-start}.agenda-card-topline{display:grid}}

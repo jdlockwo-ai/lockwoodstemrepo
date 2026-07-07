@@ -4,14 +4,14 @@
 
 | Previous public label | New public label | Short label | Public URL folder |
 |---|---|---|---|
-| Introduction to Engineering Design | Aerospace Engineering Design | AED | `courses/aerospace-engineering-design/` |
-| Principles of Engineering | Aerospace Systems Engineering | ASE | `courses/aerospace-systems-engineering/` |
+| Introduction to Engineering Design | IED | AED | `courses/ied/` |
+| Principles of Engineering | POE | ASE | `courses/poe/` |
 
 ## Structural updates completed
 
-- Renamed `courses/aed/` to `courses/aerospace-engineering-design/`
-- Renamed `courses/ase/` to `courses/aerospace-systems-engineering/`
-- Renamed `downloads/project-briefs/ase/` to `downloads/project-briefs/aerospace-systems-engineering/`
+- Renamed `courses/aed/` to `courses/ied/`
+- Renamed `courses/ase/` to `courses/poe/`
+- Renamed `downloads/project-briefs/ase/` to `downloads/project-briefs/poe/`
 - Updated all local HTML/JS/CSS/MD/TXT references to the new course and resource paths
 - Confirmed old `ied`, `poe`, `courses/aed`, `courses/ase`, and `project-briefs/ase` paths no longer appear in site text or file paths
 
@@ -19,8 +19,8 @@
 
 Downloadable course files now use the LockwoodSTEM course abbreviations:
 
-- `AED_...` for Aerospace Engineering Design resources
-- `ASE_...` for Aerospace Systems Engineering resources
+- `AED_...` for IED resources
+- `ASE_...` for POE resources
 
 Examples:
 

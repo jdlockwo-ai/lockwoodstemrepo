@@ -4,7 +4,7 @@ This is a GitHub-ready static site assembled from the current LockwoodSTEM / Aer
 
 ## Included
 
-- Complete Aerospace Engineering Design course hub
+- Complete IED course hub
 - Updated 2026-2027 AED syllabus PDF and signature page
 - Dynamic student-facing lesson pages for every AED lesson in Units 0-5
 - Unit 0: Engineering Foundations & Rocket Launch Pad Challenge

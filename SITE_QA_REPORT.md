@@ -15,7 +15,7 @@ Completed QA pass on the student site package.
 ## Fixes applied
 - Added missing CSS support for `.card-grid` so unit/resource cards display consistently.
 - Added a CSS variable alias for `--navy2` to prevent invalid gradient declarations.
-- Replaced Advanced Manufacturing placeholder language with cleaner “In Development” language.
+- Replaced ADM placeholder language with cleaner “In Development” language.
 - Replaced ASE course resource placeholder text with direct links to the project brief packet, rover systems build guide, and template pack.
 - Added ASE aerospace rover resources to the main Engineering Resource Library.
 - Replaced unit-level resource placeholder wording with student-facing resource guidance.
