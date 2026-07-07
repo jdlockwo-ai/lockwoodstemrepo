@@ -77,7 +77,70 @@
         <div class="lesson-item"><strong>Activity 1.1.1</strong><span>Assembly Line</span><p>Investigate how assembly lines organize tasks and improve consistency, efficiency, and repeatability.</p></div>
         <div class="lesson-item"><strong>Activity 1.1.2</strong><span>6-Axis Arm</span><p>Explore joints, axes of motion, reach, and the work envelope of a robotic arm.</p></div>
         <div class="lesson-item"><strong>Activity 1.1.3</strong><span>Pick and Place</span><p>Apply precise movement to transport an object from one location to another.</p></div>
-        <div class="lesson-item"><strong>Activity 1.1.4</strong><span>Coding Movement</span><p>Practice simple motion commands and movement sequences.</p></div>
+        <div class="lesson-item code-lesson"><strong>Activity 1.1.4</strong><span>Coding Movement</span><p>Practice simple motion commands and movement sequences.</p>
+          <section class="code-card">
+            <div class="code-card-header">
+              <span>VEXcode Python Example</span>
+              <button class="copy-code-btn" type="button">Copy Code</button>
+            </div>
+            <div class="code-disclaimer">
+              Code examples may be incomplete or missing comments. Comments are required for code submissions.
+            </div>
+            <pre><code class="language-python">#region VEXcode Generated Robot Configuration
+from cte import *
+import math
+import random
+
+# Brain should be defined by default
+brain = Brain()
+
+# Robot configuration code
+arm = Arm()
+signal_tower = arm.signal_tower
+
+
+# Wait for sensor(s) to fully initialize
+wait(100, MSEC)
+
+#endregion VEXcode Generated Robot Configuration
+# ------------------------------------------
+# 
+# 	Project:      VEXcode Project
+#	Author:       JLOCKWOOD
+#	Created:
+#	Description:  1.1.4
+# 
+# ------------------------------------------
+
+# Library imports
+from cte import *
+
+# Add project code in &quot;main&quot;
+def main():
+    signal_tower.set_color(SignalTower.WHITE, SignalTower.ON)
+    signal_tower.set_color(SignalTower.GREEN, SignalTower.OFF)
+    arm.set_speed(50)
+    arm.move_to(150, -2, 10)
+    arm.move_to(150, -2, 1)
+    arm.move_to(150, -2, 30)
+    arm.move_to(150, 104, 30)
+    arm.move_to(150, 104, 1)
+    arm.move_to(150, 104, 30)
+    arm.move_to(99, 150, 30)
+    arm.move_to(99, 150, 1)
+    arm.move_to(99, 150, 30)
+    arm.move_to(-1, 150, 30)
+    arm.move_to(-1, 150, 1)
+    arm.move_to(-1, 150, 30)
+    arm.move_to(120, 0, 100)
+    signal_tower.set_color(SignalTower.WHITE, SignalTower.OFF)
+
+
+# CTE threads — Do not delete
+cte_thread(main)
+</code></pre>
+          </section>
+        </div>
         <div class="lesson-item"><strong>Activity 1.1.5</strong><span>Controlled Path</span><p>Analyze how path planning improves safety, accuracy, and efficiency.</p></div>
         <div class="lesson-item"><strong>Activity 1.1.6</strong><span>Shapes</span><p>Use code to move through geometric paths and connect programming to spatial reasoning.</p></div>
         <div class="lesson-item"><strong>Activity 1.1.7</strong><span>Absolute and Relative Movement</span><p>Compare absolute and relative movement commands and when each is useful.</p></div>
