@@ -1443,3 +1443,23 @@ main .btn.secondary,
 .agenda-help-section{padding-top:4.25rem}
 @media(max-width:1100px){.agenda-status-updated,.agenda-display-grid,.agenda-week-display{grid-template-columns:1fr}.agenda-main-footer{grid-template-columns:1fr}}
 @media(max-width:800px){.agenda-controls{grid-template-columns:1fr}.view-toggle{justify-content:flex-start}.agenda-card-topline{display:grid}}
+
+
+/* Agenda student-facing cleanup */
+.google-sheet-status,
+.google-sheets-status,
+.sheet-status,
+.connected-status,
+.agenda-setup,
+.teacher-setup,
+.sheet-setup,
+.setup-panel,
+.setup-card,
+[data-agenda-setup],
+[data-sheet-status],
+#sheetStatus,
+#googleSheetStatus,
+#teacherSetup,
+#agendaSetup {
+  display:none !important;
+}
