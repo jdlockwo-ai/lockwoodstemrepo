@@ -1865,3 +1865,155 @@ main:fullscreen .agenda-clock-badge,
   padding:.55rem .8rem;
   font-size:.86rem;
 }
+
+
+/* Agenda display cleanup */
+.agenda-panel,
+.agenda-toolbar,
+.agenda-controls,
+.agenda-status-row{
+  align-items:stretch;
+}
+
+.agenda-status-row{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+}
+
+.agenda-status-card,
+.agenda-date-card,
+.agenda-current-card,
+.agenda-course-card,
+.agenda-message-card,
+.agenda-clock-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:94px;
+  height:100%;
+  padding:1rem 1.25rem;
+}
+
+.agenda-status-card *,
+.agenda-date-card *,
+.agenda-current-card *,
+.agenda-course-card *,
+.agenda-message-card *,
+.agenda-clock-card *{
+  text-align:center;
+}
+
+.agenda-status-card h2,
+.agenda-status-card h3,
+.agenda-date-card h2,
+.agenda-date-card h3,
+.agenda-current-card h2,
+.agenda-current-card h3,
+.agenda-course-card h2,
+.agenda-course-card h3,
+.agenda-message-card h2,
+.agenda-message-card h3,
+.agenda-clock-card h2,
+.agenda-clock-card h3{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.agenda-current-card .eyebrow,
+.agenda-status-card .eyebrow,
+.agenda-date-card .eyebrow,
+.agenda-course-card .eyebrow,
+.agenda-message-card .eyebrow,
+.agenda-clock-card .eyebrow{
+  width:100%;
+  display:block;
+  text-align:center;
+  letter-spacing:.08em;
+}
+
+.agenda-clock-card{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+  border-radius:999px;
+}
+
+.agenda-clock-card .agenda-clock-day{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:3.2rem;
+  margin-right:.65rem;
+  color:var(--gold);
+  font-weight:950;
+  letter-spacing:.08em;
+}
+
+.agenda-clock-card .agenda-clock-time{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+  white-space:nowrap;
+}
+
+.agenda-summary-card,
+.agenda-empty-card{
+  text-align:center;
+}
+
+.agenda-empty-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:180px;
+  padding:2rem;
+}
+
+.agenda-empty-card h1,
+.agenda-empty-card h2,
+.agenda-empty-card p{
+  width:100%;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.agenda-empty-card h1,
+.agenda-empty-card h2{
+  font-size:clamp(2.25rem,5vw,4.25rem);
+  line-height:1;
+}
+
+.agenda-content-grid,
+.agenda-detail-grid{
+  align-items:stretch;
+}
+
+.agenda-content-grid .card,
+.agenda-detail-grid .card{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+
+.agenda-content-grid .card *,
+.agenda-detail-grid .card *{
+  text-align:center;
+}
+
+@media(max-width:900px){
+  .agenda-status-row{
+    grid-template-columns:1fr;
+  }
+  .agenda-clock-card{
+    border-radius:28px;
+  }
+}
