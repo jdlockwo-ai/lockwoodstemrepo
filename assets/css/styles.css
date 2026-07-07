@@ -1373,7 +1373,7 @@ main .btn.secondary,
 }
 
 
-/* FabLab hero visual + certification pathway */
+/* FabLab hero image + certification pathway */
 .fablab-hero-section{padding-top:0}
 .fablab-hero-layout{position:relative;z-index:1;padding:4rem 0;display:grid;grid-template-columns:minmax(320px,.9fr) minmax(420px,1.1fr);gap:1.8rem;align-items:center}
 .fablab-hero-copy p{max-width:60ch}
