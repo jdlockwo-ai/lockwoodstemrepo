@@ -23,6 +23,13 @@
     </ul>
   </div>
 </header>
+
+<div class="agenda-fullscreen-row">
+  <button id="agendaFullscreenBtn" class="btn agenda-fullscreen-btn" type="button" aria-label="Open agenda in full screen">
+    Full Screen Agenda
+  </button>
+</div>
+
 <main id="main">
 
 <section class="page-hero agenda-hero">
@@ -32,11 +39,10 @@
       <h1>Class Agenda</h1>
       <div class="hero-actions">
         <a class="btn" href="#agendaPanel">View Today</a>
-        <a class="btn secondary" href="downloads/LockwoodSTEM_Agenda_Google_Sheets_Template.xlsx">Download Sheet Template</a>
       </div>
     </div>
     <aside class="card dark">
-      <h3>Quick edits, clean display</h3>
+      <h3></h3>
     </aside>
   </div>
 </section>
@@ -76,34 +82,6 @@
   </div>
 </section>
 
-<section class="light-section agenda-help-section">
-  <div class="container">
-    <div class="section-header">
-      <div>
-        <div class="eyebrow"></div>
-        <h2>Google Sheet format</h2>
-        <p class="section-subtitle">Use the spreadsheet template to make quick agenda edits without changing the website code every day.</p>
-      </div>
-    </div>
-    <div class="grid three">
-      <article class="card">
-        <span class="step-number">1</span>
-        <h3>Fill out the sheet</h3>
-        <p>Use one tab per course. Keep the column headers the same so the website can read the data.</p>
-      </article>
-      <article class="card">
-        <span class="step-number">2</span>
-        <h3>Publish each tab</h3>
-      </article>
-      <article class="card">
-        <span class="step-number">3</span>
-        <h3>Update one config file</h3>
-        <p>Paste the published CSV links into <strong>assets/js/agenda-config.js</strong>. Future sheet edits will display on this page.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 </main>
 <footer class="footer">
   <div class="container footer-grid">
@@ -114,5 +92,85 @@
     <div class="footer-links"><a href="courses.html">Courses</a> <a href="agenda.html">Daily Agenda</a> <a href="resources/index.html">Resources</a> <a href="certifications/index.html">Certifications</a> <a href="fablab/index.html">FabLab</a> <a href="about/index.html">About</a></div>
   </div>
 </footer>
+
+<script>
+(function(){
+  const button = document.getElementById('agendaFullscreenBtn');
+  const agendaTarget =
+    document.querySelector('.agenda-shell') ||
+    document.querySelector('.agenda-panel') ||
+    document.getElementById('app') ||
+    document.querySelector('main');
+
+  if (!button || !agendaTarget) return;
+
+  function isFullScreen(){
+    return document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+  }
+
+  function updateButton(){
+    button.textContent = isFullScreen() ? 'Exit Full Screen' : 'Full Screen Agenda';
+    button.setAttribute('aria-label', isFullScreen() ? 'Exit full screen agenda' : 'Open agenda in full screen');
+  }
+
+  async function openFullScreen(){
+    document.body.classList.add('agenda-fullscreen-active');
+    try {
+      if (agendaTarget.requestFullscreen) {
+        await agendaTarget.requestFullscreen();
+      } else if (agendaTarget.webkitRequestFullscreen) {
+        agendaTarget.webkitRequestFullscreen();
+      } else if (agendaTarget.msRequestFullscreen) {
+        agendaTarget.msRequestFullscreen();
+      } else {
+        agendaTarget.classList.add('agenda-fallback-fullscreen');
+      }
+    } catch (error) {
+      agendaTarget.classList.add('agenda-fallback-fullscreen');
+    }
+    updateButton();
+  }
+
+  async function closeFullScreen(){
+    agendaTarget.classList.remove('agenda-fallback-fullscreen');
+    document.body.classList.remove('agenda-fullscreen-active');
+    try {
+      if (document.exitFullscreen && document.fullscreenElement) {
+        await document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    } catch (error) {}
+    updateButton();
+  }
+
+  button.addEventListener('click', function(){
+    if (isFullScreen() || agendaTarget.classList.contains('agenda-fallback-fullscreen')) {
+      closeFullScreen();
+    } else {
+      openFullScreen();
+    }
+  });
+
+  document.addEventListener('fullscreenchange', function(){
+    if (!isFullScreen()) {
+      agendaTarget.classList.remove('agenda-fallback-fullscreen');
+      document.body.classList.remove('agenda-fullscreen-active');
+    }
+    updateButton();
+  });
+
+  document.addEventListener('keydown', function(event){
+    if (event.key === 'Escape' && agendaTarget.classList.contains('agenda-fallback-fullscreen')) {
+      closeFullScreen();
+    }
+  });
+
+  updateButton();
+})();
+</script>
+
 </body>
 </html>

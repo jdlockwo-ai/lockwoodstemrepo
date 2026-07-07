@@ -1463,3 +1463,65 @@ main .btn.secondary,
 #agendaSetup {
   display:none !important;
 }
+
+
+/* Agenda public cleanup: hide setup/template/format helper panels from student view */
+.agenda-template-download,
+.download-template,
+.sheet-template,
+.spreadsheet-template,
+.google-sheet-format,
+.google-sheets-format,
+.sheet-format,
+.spreadsheet-format,
+.format-section,
+.template-section {
+  display:none !important;
+}
+
+
+/* Agenda fullscreen button */
+.agenda-fullscreen-row{
+  width:min(1380px,94vw);
+  margin:1rem auto 0;
+  display:flex;
+  justify-content:flex-end;
+  position:relative;
+  z-index:3;
+}
+.agenda-fullscreen-btn{
+  border:1px solid rgba(255,255,255,.24);
+}
+.agenda-shell:fullscreen,
+.agenda-panel:fullscreen,
+#app:fullscreen,
+main:fullscreen{
+  background:linear-gradient(180deg,#F8FAFC,#EEF4FF);
+  overflow:auto;
+  padding:1.5rem;
+}
+.agenda-fallback-fullscreen{
+  position:fixed !important;
+  inset:0 !important;
+  z-index:9999 !important;
+  width:100vw !important;
+  height:100vh !important;
+  overflow:auto !important;
+  background:linear-gradient(180deg,#F8FAFC,#EEF4FF) !important;
+  padding:1.5rem !important;
+}
+body.agenda-fullscreen-active .site-header,
+body.agenda-fullscreen-active .footer{
+  display:none;
+}
+body.agenda-fullscreen-active{
+  overflow:hidden;
+}
+@media(max-width:700px){
+  .agenda-fullscreen-row{
+    justify-content:stretch;
+  }
+  .agenda-fullscreen-btn{
+    width:100%;
+  }
+}
