@@ -64,6 +64,8 @@
       </div>
       <div class="agenda-status agenda-status-updated">
         <div class="agenda-badge" id="dateBadge">Loading date...</div>
+        <div class="agenda-badge agenda-clock-badge" id="liveClock" aria-live="polite">Loading time...</div>
+        <div class="agenda-badge agenda-period-badge" id="currentPeriodBadge" aria-live="polite">Loading period...</div>
         <div class="agenda-badge" id="courseBadge">Loading course...</div>
         <div class="agenda-badge" id="lessonBadge">Loading lesson...</div>
       </div>
@@ -159,6 +161,133 @@
   });
 
   updateButton();
+})();
+</script>
+
+
+
+
+<script>
+(function(){
+  const clock = document.getElementById('liveClock');
+  const currentPeriodBadge = document.getElementById('currentPeriodBadge');
+
+  const regularSchedule = [
+    { name: '1st Period', start: '07:40', end: '08:35' },
+    { name: '2nd Period', start: '08:41', end: '09:31' },
+    { name: '3rd Period', start: '09:37', end: '10:27' },
+    { name: '4th Period', start: '10:33', end: '11:23' },
+    { name: '5th Period', start: '11:29', end: '12:19' },
+    { name: '6th Period', start: '12:25', end: '13:44' },
+    { name: 'A Lunch', start: '12:19', end: '12:48' },
+    { name: 'A Class', start: '12:54', end: '13:44' },
+    { name: 'B Class', start: '12:25', end: '13:15' },
+    { name: 'B Lunch', start: '13:15', end: '13:44' },
+    { name: '7th Period', start: '13:50', end: '14:40' }
+  ];
+
+  const wednesdaySchedule = [
+    { name: '1st Period', start: '07:40', end: '08:25' },
+    { name: '2nd Period', start: '08:31', end: '09:11' },
+    { name: '3rd Period', start: '09:17', end: '09:57' },
+    { name: '4th Period', start: '10:03', end: '10:43' },
+    { name: '5th Period', start: '10:49', end: '11:29' },
+    { name: '6th Period', start: '11:35', end: '12:54' },
+    { name: 'A Lunch', start: '11:29', end: '11:58' },
+    { name: 'A Class', start: '12:04', end: '12:54' },
+    { name: 'B Class', start: '11:35', end: '12:25' },
+    { name: 'B Lunch', start: '12:25', end: '12:54' },
+    { name: '7th Period', start: '13:00', end: '13:40' }
+  ];
+
+  function minutesFromTime(value){
+    const parts = value.split(':').map(Number);
+    return parts[0] * 60 + parts[1];
+  }
+
+  function timeLabel(value){
+    const [hourString, minuteString] = value.split(':');
+    let hour = Number(hourString);
+    const minute = minuteString.padStart(2, '0');
+    const suffix = hour >= 12 ? 'PM' : 'AM';
+    hour = hour % 12 || 12;
+    return `${hour}:${minute} ${suffix}`;
+  }
+
+  function getScheduleForDate(date){
+    const day = date.getDay();
+    if (day === 3) return wednesdaySchedule;
+    if ([1, 2, 4, 5].includes(day)) return regularSchedule;
+    return [];
+  }
+
+  function displayScheduleName(date){
+    const day = date.getDay();
+    if (day === 3) return 'Wednesday';
+    if ([1, 2, 4, 5].includes(day)) return 'Regular';
+    return 'No School';
+  }
+
+  function findCurrentBlock(date){
+    const schedule = getScheduleForDate(date);
+    if (!schedule.length) return { status: 'No School', detail: 'Weekend', minutesRemaining: null };
+
+    const nowMinutes = date.getHours() * 60 + date.getMinutes();
+    const sorted = [...schedule].sort((a, b) => minutesFromTime(a.start) - minutesFromTime(b.start));
+
+    const current = sorted.find(block => nowMinutes >= minutesFromTime(block.start) && nowMinutes < minutesFromTime(block.end));
+    if (current) {
+      const remaining = minutesFromTime(current.end) - nowMinutes;
+      return {
+        status: current.name,
+        detail: `Ends ${timeLabel(current.end)} · ${remaining} min left`,
+        minutesRemaining: remaining
+      };
+    }
+
+    const next = sorted.find(block => nowMinutes < minutesFromTime(block.start));
+    if (next) {
+      const startsIn = minutesFromTime(next.start) - nowMinutes;
+      return {
+        status: 'Passing / Before Class',
+        detail: `Next: ${next.name} at ${timeLabel(next.start)} · ${startsIn} min`,
+        minutesRemaining: startsIn
+      };
+    }
+
+    return { status: 'After School', detail: `Schedule ended · ${displayScheduleName(date)}`, minutesRemaining: null };
+  }
+
+  function updateClockAndPeriod(){
+    const now = new Date();
+
+    if (clock) {
+      const time = new Intl.DateTimeFormat('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      }).format(now);
+
+      const day = new Intl.DateTimeFormat('en-US', {
+        weekday: 'short'
+      }).format(now);
+
+      clock.innerHTML = `<span class="clock-label">${day}</span><span class="clock-time">${time}</span>`;
+    }
+
+    if (currentPeriodBadge) {
+      const period = findCurrentBlock(now);
+      currentPeriodBadge.innerHTML = `
+        <span class="period-label">Current</span>
+        <span class="period-main">${period.status}</span>
+        <span class="period-detail">${period.detail}</span>
+      `;
+    }
+  }
+
+  updateClockAndPeriod();
+  setInterval(updateClockAndPeriod, 1000);
 })();
 </script>
 
