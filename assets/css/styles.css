@@ -1291,3 +1291,21 @@ main .btn.secondary,
 /* QA polish: reusable card grids used by unit/resource pages */
 .card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.35rem}
 @media(max-width:1000px){.card-grid{grid-template-columns:1fr}}
+
+/* FabLab page enhancements */
+.fablab-hero-grid{align-items:center}
+.fablab-hero-media{padding:1rem}
+.fablab-hero-media img{width:100%;display:block;border-radius:16px;border:1px solid #DDE4EF;box-shadow:var(--shadow-soft)}
+.fablab-media-copy{padding:.95rem .2rem .1rem}
+.fablab-media-copy h3{margin-bottom:.45rem}
+.step-number{display:inline-grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:950;margin-bottom:.75rem;box-shadow:0 10px 20px rgba(200,162,74,.22)}
+.accent-panel{min-height:100%}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+.gallery-card{background:#fff;color:var(--text);border:1px solid #DDE4EF;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-soft)}
+.gallery-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#F8FAFC}
+.gallery-card figcaption{padding:1rem 1rem 1.15rem;display:grid;gap:.35rem}
+.gallery-card figcaption strong{font-size:1.02rem;color:var(--navy)}
+.gallery-card figcaption span{color:var(--muted)}
+@media(max-width:1000px){
+  .gallery-grid{grid-template-columns:1fr}
+}
