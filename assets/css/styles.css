@@ -2397,3 +2397,109 @@ body.safe-unit-page .lesson-item .card-actions{
 body.safe-unit-page .safe-unit-lesson-button{
   text-decoration:none;
 }
+
+
+/* ADM lesson sequence table matching IED/POE */
+.adm-sequence-table-section{
+  padding-top:2rem;
+  padding-bottom:3rem;
+}
+.lesson-sequence-table-wrap{
+  overflow-x:auto;
+  background:#fff;
+  border:1px solid rgba(11,31,58,.10);
+  border-radius:24px;
+  box-shadow:0 18px 40px rgba(2,10,28,.08);
+}
+.lesson-sequence-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  min-width:880px;
+}
+.lesson-sequence-table th,
+.lesson-sequence-table td{
+  padding:1rem;
+  text-align:left;
+  vertical-align:top;
+  border-bottom:1px solid rgba(11,31,58,.10);
+}
+.lesson-sequence-table thead th{
+  background:linear-gradient(180deg,#0b1f3a,#102c52);
+  color:#fff;
+  font-size:.82rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:950;
+}
+.lesson-sequence-table thead th:first-child{
+  border-top-left-radius:24px;
+}
+.lesson-sequence-table thead th:last-child{
+  border-top-right-radius:24px;
+}
+.lesson-sequence-table tbody tr:last-child td{
+  border-bottom:none;
+}
+.lesson-sequence-table tbody tr:hover td{
+  background:#f7f9fc;
+}
+.lesson-sequence-cluster-row th{
+  background:rgba(200,162,74,.14);
+  color:var(--navy);
+  border-bottom:1px solid rgba(200,162,74,.35);
+}
+.lesson-sequence-cluster-row span{
+  display:block;
+  font-size:1rem;
+  font-weight:950;
+}
+.lesson-sequence-cluster-row small{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  font-weight:700;
+  letter-spacing:0;
+  text-transform:none;
+  margin-top:.25rem;
+}
+.lesson-table-number{
+  width:150px;
+  font-weight:950;
+  color:var(--blue);
+  white-space:nowrap;
+}
+.lesson-table-type{
+  display:inline-flex;
+  padding:.32rem .58rem;
+  border-radius:999px;
+  background:rgba(19,92,168,.10);
+  color:var(--blue);
+  font-size:.8rem;
+  font-weight:950;
+}
+.lesson-table-title{
+  font-weight:950;
+  color:var(--navy);
+  min-width:180px;
+}
+.lesson-table-description{
+  color:var(--muted);
+  min-width:300px;
+}
+.lesson-table-action{
+  width:130px;
+  white-space:nowrap;
+}
+.lesson-table-muted{
+  color:var(--muted);
+  font-weight:850;
+}
+@media(max-width:760px){
+  .lesson-sequence-table-wrap{
+    border-radius:18px;
+  }
+  .lesson-sequence-table{
+    min-width:760px;
+  }
+}
