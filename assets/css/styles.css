@@ -2229,3 +2229,73 @@ main:fullscreen .agenda-clock-badge,
 .course-card-image{
   transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
+
+
+/* Final polish pass: clean clickable cards and course landing pages */
+.course-card-full-link{
+  display:block;
+  height:100%;
+  color:inherit;
+  text-decoration:none;
+  cursor:pointer;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.course-card-full-link:hover,
+.course-card-full-link:focus{
+  transform:translateY(-5px);
+  box-shadow:0 24px 48px rgba(2,10,28,.16);
+  border-color:rgba(200,162,74,.85);
+  outline:none;
+}
+.course-card-full-link h3{
+  text-decoration:none;
+}
+.homepage-course-card{
+  overflow:hidden;
+}
+.homepage-course-logo{
+  display:block;
+  width:100%;
+  max-width:210px;
+  aspect-ratio:1 / 1;
+  object-fit:contain;
+  margin:0 auto 1rem;
+  border-radius:20px;
+  background:#fff;
+  padding:.75rem;
+  border:1px solid rgba(11,31,58,.10);
+  box-shadow:0 12px 24px rgba(2,10,28,.08);
+}
+.course-overview-card{
+  overflow:hidden;
+}
+.card-link-text{
+  display:inline-block;
+  margin-top:.75rem;
+  font-weight:950;
+  color:var(--blue);
+}
+.course-card-full-link:hover .card-link-text,
+.course-card-full-link:focus .card-link-text{
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.course-hero-logo{
+  width:clamp(96px, 16vw, 160px);
+  aspect-ratio:1 / 1;
+  object-fit:contain;
+  display:block;
+  margin:0 0 1rem;
+  padding:.55rem;
+  border-radius:24px;
+  background:#fff;
+  border:1px solid rgba(11,31,58,.12);
+  box-shadow:0 18px 36px rgba(2,10,28,.12);
+}
+.course-landing-intro{
+  padding-top:2rem;
+  padding-bottom:1rem;
+}
+.course-landing-intro .card{
+  height:100%;
+}
