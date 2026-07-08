@@ -2503,3 +2503,43 @@ body.safe-unit-page .safe-unit-lesson-button{
     min-width:760px;
   }
 }
+
+
+/* IED and POE placeholder lesson pages */
+.lesson-placeholder-hero{
+  background:
+    radial-gradient(circle at 15% 20%, rgba(200,162,74,.18), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(19,92,168,.20), transparent 26%),
+    linear-gradient(135deg,#071a33 0%,#0b1f3a 58%,#102c52 100%);
+}
+.lesson-course-icon{
+  width:clamp(92px,14vw,150px);
+  aspect-ratio:1 / 1;
+  display:block;
+  object-fit:contain;
+  background:#fff;
+  border-radius:24px;
+  padding:.55rem;
+  margin:0 0 1rem;
+  border:1px solid rgba(255,255,255,.45);
+  box-shadow:0 20px 42px rgba(0,0,0,.24);
+}
+.placeholder-note,
+.resources-placeholder p{
+  color:var(--muted);
+}
+.resources-placeholder{
+  border-left:6px solid rgba(200,162,74,.75);
+}
+.submit-card{
+  border-left:6px solid var(--gold);
+}
+.submit-list{
+  columns:1;
+}
+@media(min-width:900px){
+  .submit-list{
+    columns:2;
+    column-gap:2rem;
+  }
+}
