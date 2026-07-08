@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="../../../assets/css/styles.css">
 <script defer src="../../../assets/js/main.js"></script>
 </head>
-<body class="unit-template-page">
+<body class="adm-unit-page safe-unit-page">
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
   <div class="container nav">
@@ -26,198 +26,145 @@
     </ul>
   </div>
 </header>
+<main id="main">
+<section class="page-hero adm-hero">
+  <div class="container hero-grid">
+    <div>
+      <img class="safe-unit-course-icon" src="../../../assets/img/course-icons/adm-course-icon.png" alt="ADM course icon">
 
-
-<main id="main" class="unit-template-main">
-
-<section class="unit-template-hero">
-  <div class="container unit-template-hero-grid">
-    <div class="unit-template-hero-copy">
-      <img class="unit-template-course-icon" src="../../../assets/img/course-icons/adm-course-icon.png" alt="ADM course icon">
-      <p class="unit-template-eyebrow">ADM • Advanced Manufacturing</p>
+      <div class="eyebrow">ADM Unit 1</div>
       <h1>Introduction to Industry 4.0</h1>
       <p>Students explore smart manufacturing through robotic arm movement, assembly lines, pick-and-place programming, material handling, palletizing, and a packaging challenge.</p>
-      <div class="hero-actions unit-template-actions">
-        <a class="btn unit-template-primary" href="unit-1/activity-1-1-1.html">Start First Lesson</a>
-        <a class="btn secondary" href="../index.html">ADM Course Home</a>
+      <div class="hero-actions">
+        <a class="btn" href="#lesson-sequence">View Lessons</a>
+        <a class="btn secondary" href="#unit-challenge">Unit Challenge</a>
+        <a class="btn secondary" href="../index.html">Back to ADM</a>
       </div>
     </div>
-    <aside class="unit-template-summary">
-      <p class="unit-template-eyebrow">Unit 1</p>
-      <h2>Unit Overview</h2>
-      <div class="unit-template-stat-grid">
-        <div>
-          <strong>12</strong>
-          <span>Lessons</span>
-        </div>
-        <div>
-          <strong>3</strong>
-          <span>Projects / Problems</span>
-        </div>
-        <div>
-          <strong>ADM</strong>
-          <span>Course</span>
-        </div>
-      </div>
+    <aside class="card dark">
+      <span class="tag">Unit Goal</span>
+      <h3>From motion to manufacturing workflow</h3>
+      <p>Learn how robotic systems move, repeat tasks, organize products, and support packaging and shipping operations.</p>
     </aside>
   </div>
 </section>
 
-<section class="container unit-template-info-row">
-  <article class="unit-template-info-card">
-    <p class="unit-template-eyebrow">How to use this page</p>
-    <h2>Follow the unit pathway</h2>
-    <p>Open the lessons in order, complete the required work, and return here to continue through the unit.</p>
-  </article>
-  <article class="unit-template-info-card">
-    <p class="unit-template-eyebrow">Student evidence</p>
-    <h2>Document your progress</h2>
-    <ul>
-      <li>engineering notebook entries</li><li>sketches, models, code, photos, or screenshots</li><li>test data or analysis evidence</li><li>revision notes and reflection</li>
-    </ul>
-  </article>
-  <article class="unit-template-info-card">
-    <p class="unit-template-eyebrow">Key habits</p>
-    <h2>Think like an engineer</h2>
-    <div class="unit-template-tags">
-      <span>problem solving</span><span>engineering evidence</span><span>iteration</span><span>documentation</span>
-    </div>
-  </article>
+<section class="container">
+  <div class="grid three">
+    <article class="card"><h3>Essential Questions</h3><ul class="unit-meta-list"><li>What makes a manufacturing system smart?</li><li>How do robotic arms support repeatable manufacturing tasks?</li><li>How do programming decisions affect accuracy, safety, and efficiency?</li><li>How do logistics tasks connect to Industry 4.0?</li></ul></article>
+    <article class="card"><h3>Learning Targets</h3><ul class="unit-meta-list"><li>I can describe how robots are used in modern manufacturing.</li><li>I can program or analyze robotic movement sequences.</li><li>I can compare absolute and relative movement.</li><li>I can document setup, testing, code, and revisions.</li></ul></article>
+    <article class="card"><h3>Major Deliverables</h3><ul class="unit-meta-list"><li>Engineering notebook entries</li><li>Robot program or code documentation</li><li>Testing and troubleshooting evidence</li><li>Pack and Ship Challenge reflection</li></ul></article>
+  </div>
 </section>
 
-<section class="container unit-template-pathway" id="unit-pathway">
-  <div class="unit-template-section-header">
-    <p class="unit-template-eyebrow">Unit pathway</p>
-    <h2>Lessons, Activities, Projects, and Problems</h2>
-    <p>Each course now uses this same unit-page layout so students can navigate the site consistently.</p>
+<section id="lesson-sequence" class="light-section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="eyebrow">Lesson sequence</div>
+        <h2>Unit 1 lesson clusters</h2>
+        <p class="section-subtitle">The unit moves from basic robotic arm motion to manufacturing logistics and a culminating packaging challenge.</p>
+      </div>
+    </div>
+
+    <article class="lesson-cluster">
+      <div class="cluster-header">
+        <span class="unit-pill">1.1</span>
+        <div>
+          <h3>Robotic Arm Fundamentals &amp; Motion Programming</h3>
+          <p>Students learn how robotic arms move, follow paths, complete pick-and-place tasks, and use absolute and relative movement.</p>
+        </div>
+      </div>
+      <div class="lesson-list">
+        <div class="lesson-item"><strong>Activity 1.1.1</strong><span>Assembly Line</span><p>Investigate how assembly lines organize tasks and improve consistency, efficiency, and repeatability.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-1-1.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item"><strong>Activity 1.1.2</strong><span>6-Axis Arm</span><p>Explore joints, axes of motion, reach, and the work envelope of a robotic arm.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-1-2.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item"><strong>Activity 1.1.3</strong><span>Pick and Place</span><p>Apply precise movement to transport an object from one location to another.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-1-3.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item">
+          <strong>Activity 1.1.4</strong>
+          <span>Coding Movement</span>
+          <p>Practice simple motion commands and movement sequences.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-1-4.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item">
+          <strong>Activity 1.1.5</strong>
+          <span>Controlled Path</span>
+          <p>Analyze how path planning improves safety, accuracy, and efficiency.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-1-5.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item">
+          <strong>Activity 1.1.6</strong>
+          <span>Shapes</span>
+          <p>Use code to move through geometric paths and connect programming to spatial reasoning.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-1-6.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item"><strong>Activity 1.1.7</strong><span>Absolute and Relative Movement</span><p>Compare absolute and relative movement commands and when each is useful.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-1-7.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item project"><strong>Project 1.1.8</strong><span>Decreasing Spirals</span><p>Create a programmed robotic motion sequence using path control and geometric reasoning.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/project-1-1-8.html">Open Lesson</a></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="lesson-cluster">
+      <div class="cluster-header">
+        <span class="unit-pill">1.2</span>
+        <div>
+          <h3>Manufacturing Careers, Material Handling &amp; Palletizing</h3>
+          <p>Students connect Industry 4.0 skills to careers and apply robotic movement to transporting, palletizing, and stacking objects.</p>
+        </div>
+      </div>
+      <div class="lesson-list">
+        <div class="lesson-item"><strong>Activity 1.2.1</strong><span>Career Exploration</span><p>Investigate careers in advanced manufacturing, robotics, automation, logistics, and engineering technology.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-2-1.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item"><strong>Activity 1.2.2</strong><span>Transporting and Palletizing Objects</span><p>Explore how automated systems move, organize, and palletize objects in manufacturing environments.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/activity-1-2-2.html">Open Lesson</a></div>
+        </div>
+        <div class="lesson-item project"><strong>Project 1.2.3</strong><span>Stacking Objects</span><p>Apply movement, sequencing, and spatial planning to stack objects accurately and repeatably.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/project-1-2-3.html">Open Lesson</a></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="unit-challenge" class="lesson-cluster challenge-cluster">
+      <div class="cluster-header">
+        <span class="unit-pill">1.3</span>
+        <div>
+          <h3>Unit Challenge Problem</h3>
+          <p>Students combine robotic movement, material handling, workflow planning, testing, and documentation in a realistic packaging task.</p>
+        </div>
+      </div>
+      <div class="lesson-list">
+        <div class="lesson-item project"><strong>Problem 1.3.1</strong><span>Pack and Ship Challenge</span><p>Create a repeatable packaging or shipping process that organizes, moves, stacks, packs, or prepares objects for delivery.</p>
+          <div class="card-actions"><a class="btn small safe-unit-lesson-button" href="unit-1/problem-1-3-1.html">Open Lesson</a></div>
+        </div>
+      </div>
+    </article>
   </div>
-  <div class="unit-template-cluster-stack">
+</section>
 
-      <section class="unit-template-cluster">
-        <div class="unit-template-cluster-header">
-          <div>
-            <p class="unit-template-eyebrow">Lesson pathway</p>
-            <h2>Lesson Sequence 1.1</h2>
-          </div>
-          <span>8 items</span>
-        </div>
-        <div class="unit-template-lesson-grid">
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.1.1</div>
-            <h3>Assembly Line</h3>
-            <p>Investigate how assembly lines organize tasks and improve consistency, efficiency, and repeatability.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-1-1.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.1.2</div>
-            <h3>6-Axis Arm</h3>
-            <p>Explore joints, axes of motion, reach, and the work envelope of a robotic arm.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-1-2.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.1.3</div>
-            <h3>Pick and Place</h3>
-            <p>Apply precise movement to transport an object from one location to another.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-1-3.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.1.4</div>
-            <h3>Coding Movement</h3>
-            <p>Practice simple motion commands and movement sequences.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-1-4.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.1.5</div>
-            <h3>Controlled Path</h3>
-            <p>Analyze how path planning improves safety, accuracy, and efficiency.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-1-5.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.1.6</div>
-            <h3>Shapes</h3>
-            <p>Use code to move through geometric paths and connect programming to spatial reasoning.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-1-6.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.1.7</div>
-            <h3>Absolute and Relative Movement</h3>
-            <p>Compare absolute and relative movement commands and when each is useful.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-1-7.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Project 1.1.8</div>
-            <h3>Decreasing Spirals</h3>
-            <p>Create a programmed robotic motion sequence using path control and geometric reasoning.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/project-1-1-8.html">Open Lesson</a></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="unit-template-cluster">
-        <div class="unit-template-cluster-header">
-          <div>
-            <p class="unit-template-eyebrow">Lesson pathway</p>
-            <h2>Lesson Sequence 1.2</h2>
-          </div>
-          <span>3 items</span>
-        </div>
-        <div class="unit-template-lesson-grid">
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.2.1</div>
-            <h3>Career Exploration</h3>
-            <p>Investigate careers in advanced manufacturing, robotics, automation, logistics, and engineering technology.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-2-1.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Activity 1.2.2</div>
-            <h3>Transporting and Palletizing Objects</h3>
-            <p>Explore how automated systems move, organize, and palletize objects in manufacturing environments.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/activity-1-2-2.html">Open Lesson</a></div>
-          </article>
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Project 1.2.3</div>
-            <h3>Stacking Objects</h3>
-            <p>Apply movement, sequencing, and spatial planning to stack objects accurately and repeatably.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/project-1-2-3.html">Open Lesson</a></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="unit-template-cluster">
-        <div class="unit-template-cluster-header">
-          <div>
-            <p class="unit-template-eyebrow">Lesson pathway</p>
-            <h2>Lesson Sequence 1.3</h2>
-          </div>
-          <span>1 item</span>
-        </div>
-        <div class="unit-template-lesson-grid">
-
-          <article class="unit-template-lesson-card">
-            <div class="unit-template-lesson-label">Problem 1.3.1</div>
-            <h3>Pack and Ship Challenge</h3>
-            <p>Create a repeatable packaging or shipping process that organizes, moves, stacks, packs, or prepares objects for delivery.</p>
-            <div class="unit-template-card-actions"><a class="btn small unit-template-button" href="unit-1/problem-1-3-1.html">Open Lesson</a></div>
-          </article>
-        </div>
-      </section>
+<section class="container">
+  <div class="section-header">
+    <div>
+      <div class="eyebrow">Student resources</div>
+      <h2>Unit 1 support materials</h2>
+    </div>
+  </div>
+  <div class="grid three">
+    <article class="card"><h3>Recommended Certifications</h3><ul class="unit-meta-list"><li>Engineering Safety</li><li>Engineering Documentation</li><li>Robotics / programming expectations</li><li>Hand &amp; Cutting Tools, if building fixtures</li></ul><div class="card-actions"><a class="btn small safe-unit-lesson-button" href="../../../certifications/index.html">Open Certifications</a></div></article>
+    <article class="card"><h3>Resources</h3><ul class="unit-meta-list"><li>Digital Engineering Notebook</li><li>Code Documentation / Commentary</li><li>Testing and revision evidence</li><li>Design Review Form</li></ul><div class="card-actions"><a class="btn small safe-unit-lesson-button" href="../../../resources/index.html">Open Resources</a></div></article>
+    <article class="card"><h3>Key Vocabulary</h3><div class="vocab-tags"><span class="vocab-term" tabindex="0" title="Modern manufacturing that combines automation, data, connected machines, sensors, and digital systems." data-definition="Modern manufacturing that combines automation, data, connected machines, sensors, and digital systems." aria-label="Industry 4.0: Modern manufacturing that combines automation, data, connected machines, sensors, and digital systems.">Industry 4.0</span><span class="vocab-term" tabindex="0" title="Using machines, robots, sensors, or software to complete tasks with limited manual control." data-definition="Using machines, robots, sensors, or software to complete tasks with limited manual control." aria-label="Automation: Using machines, robots, sensors, or software to complete tasks with limited manual control.">Automation</span><span class="vocab-term" tabindex="0" title="A robotic arm with six joints or axes of motion, allowing it to reach and orient a tool in many directions." data-definition="A robotic arm with six joints or axes of motion, allowing it to reach and orient a tool in many directions." aria-label="6-axis arm: A robotic arm with six joints or axes of motion, allowing it to reach and orient a tool in many directions.">6-axis arm</span><span class="vocab-term" tabindex="0" title="A robotic task where an object is picked up from one location and placed in another." data-definition="A robotic task where an object is picked up from one location and placed in another." aria-label="Pick and place: A robotic task where an object is picked up from one location and placed in another.">Pick and place</span><span class="vocab-term" tabindex="0" title="A motion command that sends the robot to a specific coordinate or position in the workcell." data-definition="A motion command that sends the robot to a specific coordinate or position in the workcell." aria-label="Absolute movement: A motion command that sends the robot to a specific coordinate or position in the workcell.">Absolute movement</span><span class="vocab-term" tabindex="0" title="A motion command that moves the robot a certain distance from its current position." data-definition="A motion command that moves the robot a certain distance from its current position." aria-label="Relative movement: A motion command that moves the robot a certain distance from its current position.">Relative movement</span><span class="vocab-term" tabindex="0" title="Arranging products or parts in a planned pattern for storage, shipping, or handling." data-definition="Arranging products or parts in a planned pattern for storage, shipping, or handling." aria-label="Palletizing: Arranging products or parts in a planned pattern for storage, shipping, or handling.">Palletizing</span><span class="vocab-term" tabindex="0" title="The planning and movement of materials, products, packaging, and deliveries through a supply chain." data-definition="The planning and movement of materials, products, packaging, and deliveries through a supply chain." aria-label="Logistics: The planning and movement of materials, products, packaging, and deliveries through a supply chain.">Logistics</span><span class="vocab-term" tabindex="0" title="The ordered steps used to complete a process from start to finish." data-definition="The ordered steps used to complete a process from start to finish." aria-label="Workflow: The ordered steps used to complete a process from start to finish.">Workflow</span></div></article>
   </div>
 </section>
 
 </main>
-
-
 <footer class="footer">
   <div class="container footer-grid">
     <div>
