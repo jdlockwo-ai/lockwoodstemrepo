@@ -2299,3 +2299,32 @@ main:fullscreen .agenda-clock-badge,
 .course-landing-intro .card{
   height:100%;
 }
+
+
+/* ADM placeholder lesson pages */
+.placeholder-note,
+.resources-placeholder p{
+  color:var(--muted);
+}
+.resources-placeholder{
+  border-left:6px solid rgba(200,162,74,.75);
+}
+.lesson-item .card-actions{
+  margin-top:.85rem;
+}
+.lesson-item .btn.small{
+  padding:.55rem .8rem;
+  font-size:.86rem;
+}
+.submit-card{
+  border-left:6px solid var(--gold);
+}
+.submit-list{
+  columns:1;
+}
+@media(min-width:900px){
+  .submit-list{
+    columns:2;
+    column-gap:2rem;
+  }
+}
