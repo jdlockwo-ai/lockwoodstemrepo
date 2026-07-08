@@ -2070,3 +2070,32 @@ main:fullscreen .agenda-clock-badge,
 .vocab-tags .vocab-term:focus::before{
   opacity:1;
 }
+
+
+/* ADM lesson pages and deliverables */
+.lesson-code-section{
+  padding-top:1rem;
+  padding-bottom:3rem;
+}
+.lesson-item .card-actions{
+  margin-top:.85rem;
+}
+.lesson-item .btn.small{
+  padding:.55rem .8rem;
+  font-size:.86rem;
+}
+.submit-card{
+  border-left:6px solid var(--gold);
+}
+.submit-card .eyebrow{
+  color:var(--navy);
+}
+.submit-list{
+  columns:1;
+}
+@media(min-width:900px){
+  .submit-list{
+    columns:2;
+    column-gap:2rem;
+  }
+}
