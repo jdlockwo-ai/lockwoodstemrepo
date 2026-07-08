@@ -2017,3 +2017,56 @@ main:fullscreen .agenda-clock-badge,
     border-radius:28px;
   }
 }
+
+
+/* Vocabulary hover definitions */
+.vocab-tags .vocab-term{
+  position:relative;
+  cursor:help;
+  outline:none;
+}
+.vocab-tags .vocab-term::after{
+  content:attr(data-definition);
+  position:absolute;
+  left:50%;
+  bottom:calc(100% + 12px);
+  transform:translateX(-50%) translateY(4px);
+  width:min(280px, 80vw);
+  background:var(--navy);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:14px;
+  padding:.75rem .85rem;
+  box-shadow:0 18px 38px rgba(2,10,28,.28);
+  font-size:.84rem;
+  line-height:1.35;
+  font-weight:700;
+  text-align:left;
+  white-space:normal;
+  opacity:0;
+  pointer-events:none;
+  z-index:50;
+  transition:opacity .16s ease, transform .16s ease;
+}
+.vocab-tags .vocab-term::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:calc(100% + 5px);
+  transform:translateX(-50%);
+  border:7px solid transparent;
+  border-top-color:var(--navy);
+  opacity:0;
+  pointer-events:none;
+  z-index:51;
+  transition:opacity .16s ease;
+}
+.vocab-tags .vocab-term:hover::after,
+.vocab-tags .vocab-term:focus::after{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+.vocab-tags .vocab-term:hover::before,
+.vocab-tags .vocab-term:focus::before{
+  opacity:1;
+}
