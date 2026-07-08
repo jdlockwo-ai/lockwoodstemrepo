@@ -2099,3 +2099,56 @@ main:fullscreen .agenda-clock-badge,
     column-gap:2rem;
   }
 }
+
+
+/* Professional polish: homepage actions and standardized course pages */
+.student-actions{
+  padding-top:2.25rem;
+  padding-bottom:2.25rem;
+}
+.action-card{
+  display:block;
+  height:100%;
+  text-decoration:none;
+  color:inherit;
+  background:#fff;
+  border:1px solid rgba(11,31,58,.12);
+  border-radius:22px;
+  padding:1.25rem;
+  box-shadow:0 16px 34px rgba(2,10,28,.08);
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.action-card:hover,
+.action-card:focus{
+  transform:translateY(-4px);
+  box-shadow:0 22px 46px rgba(2,10,28,.14);
+  border-color:rgba(200,162,74,.72);
+  outline:none;
+}
+.action-icon{
+  display:inline-grid;
+  place-items:center;
+  width:48px;
+  height:48px;
+  border-radius:16px;
+  background:#F4F7FB;
+  font-size:1.45rem;
+  margin-bottom:.8rem;
+}
+.action-card h3{
+  margin:.25rem 0 .35rem;
+}
+.action-card p{
+  margin:0;
+  color:var(--muted);
+}
+.course-snapshot{
+  padding-top:2.25rem;
+}
+.course-habits{
+  margin-top:2.5rem;
+}
+.course-snapshot .card,
+.course-habits .card{
+  height:100%;
+}
