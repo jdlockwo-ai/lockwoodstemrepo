@@ -10,7 +10,7 @@ This pass cleaned up the course naming change so the site consistently uses:
 
 - Updated visible course titles and hero headings.
 - Updated course folders to `/courses/ied/`, `/courses/poe/`, and `/courses/adm/`.
-- Added redirects for old long-name course folder URLs and AED/ASE aliases.
+- Added redirects for old long-name course folder URLs and AED/POE aliases.
 - Repaired internal links after the course slug changes.
 - Added QA scans for remaining old long-name references and likely broken local HTML links.
 

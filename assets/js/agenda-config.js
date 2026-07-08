@@ -17,7 +17,7 @@ window.LOCKWOOD_AGENDA_CONFIG = {
   },
   legacyCourseAliases: {
     IED: ["AED"],
-    POE: ["ASE"],
+    POE: [],
     ADM: ["AM"]
   }
 };

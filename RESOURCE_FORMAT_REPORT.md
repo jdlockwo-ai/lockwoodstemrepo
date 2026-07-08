@@ -8,6 +8,6 @@ Updated resource availability:
 
 Removed public duplicate PDF versions for these resources where applicable and updated site links/buttons to point to the remaining editable format.
 
-Rebuilt the ASE common template pack with the same format rules.
+Rebuilt the POE common template pack with the same format rules.
 
 Local link check: 6471 links/resources checked, 0 broken.

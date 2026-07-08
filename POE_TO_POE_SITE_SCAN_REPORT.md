@@ -1,0 +1,171 @@
+# POE to POE Site Scan Report
+
+Scanned the site for remaining `POE` text and replaced course-facing references with `POE`.
+
+## Summary
+- files containing POE before cleanup: 120
+- POE text instances before cleanup: 326
+- text files changed: 118
+- files renamed from POE to POE: 10
+- remaining POE text instances: 5
+- broken local links/resources: 19
+
+## Files changed
+- `index.html`
+- `SITE_QA_REPORT.md`
+- `DOWNLOAD_BRANDING_QA_REPORT.md`
+- `COURSE_RENAME_REPORT.md`
+- `RESOURCE_FORMAT_REPORT.md`
+- `COURSE_NAME_FULL_FIX_REPORT.md`
+- `AGENDA_COURSE_NAMES_FIX_REPORT.md`
+- `HOMEPAGE_POE_UNIT0_BUTTON_REMOVED.md`
+- `VOCAB_TOOLTIPS_RESOURCES_CLEANUP_REPORT.md`
+- `courses/poe/index.html`
+- `courses/poe/units/unit-0.html`
+- `courses/poe/units/unit-1.html`
+- `courses/poe/units/unit-2.html`
+- `courses/poe/units/unit-3.html`
+- `courses/poe/units/unit-4.html`
+- `courses/poe/units/unit-5.html`
+- `courses/poe/lessons/unit-0-lesson-01.html`
+- `courses/poe/lessons/unit-0-lesson-02.html`
+- `courses/poe/lessons/unit-0-lesson-03.html`
+- `courses/poe/lessons/unit-0-lesson-04.html`
+- `courses/poe/lessons/unit-0-lesson-05.html`
+- `courses/poe/lessons/unit-0-lesson-06.html`
+- `courses/poe/lessons/unit-0-lesson-07.html`
+- `courses/poe/lessons/unit-0-lesson-08.html`
+- `courses/poe/lessons/unit-0-lesson-09.html`
+- `courses/poe/lessons/unit-0-lesson-10.html`
+- `courses/poe/lessons/unit-0-lesson-11.html`
+- `courses/poe/lessons/unit-0-lesson-12.html`
+- `courses/poe/lessons/unit-1-lesson-01.html`
+- `courses/poe/lessons/unit-1-lesson-02.html`
+- `courses/poe/lessons/unit-1-lesson-03.html`
+- `courses/poe/lessons/unit-1-lesson-04.html`
+- `courses/poe/lessons/unit-1-lesson-05.html`
+- `courses/poe/lessons/unit-1-lesson-06.html`
+- `courses/poe/lessons/unit-1-lesson-07.html`
+- `courses/poe/lessons/unit-1-lesson-08.html`
+- `courses/poe/lessons/unit-1-lesson-09.html`
+- `courses/poe/lessons/unit-1-lesson-10.html`
+- `courses/poe/lessons/unit-1-lesson-11.html`
+- `courses/poe/lessons/unit-1-lesson-12.html`
+- `courses/poe/lessons/unit-1-lesson-13.html`
+- `courses/poe/lessons/unit-1-lesson-14.html`
+- `courses/poe/lessons/unit-1-lesson-15.html`
+- `courses/poe/lessons/unit-1-lesson-16.html`
+- `courses/poe/lessons/unit-1-lesson-17.html`
+- `courses/poe/lessons/unit-1-lesson-18.html`
+- `courses/poe/lessons/unit-2-lesson-01.html`
+- `courses/poe/lessons/unit-2-lesson-02.html`
+- `courses/poe/lessons/unit-2-lesson-03.html`
+- `courses/poe/lessons/unit-2-lesson-04.html`
+- `courses/poe/lessons/unit-2-lesson-05.html`
+- `courses/poe/lessons/unit-2-lesson-06.html`
+- `courses/poe/lessons/unit-2-lesson-07.html`
+- `courses/poe/lessons/unit-2-lesson-08.html`
+- `courses/poe/lessons/unit-2-lesson-09.html`
+- `courses/poe/lessons/unit-2-lesson-10.html`
+- `courses/poe/lessons/unit-2-lesson-11.html`
+- `courses/poe/lessons/unit-2-lesson-12.html`
+- `courses/poe/lessons/unit-2-lesson-13.html`
+- `courses/poe/lessons/unit-2-lesson-14.html`
+- `courses/poe/lessons/unit-2-lesson-15.html`
+- `courses/poe/lessons/unit-2-lesson-16.html`
+- `courses/poe/lessons/unit-2-lesson-17.html`
+- `courses/poe/lessons/unit-2-lesson-18.html`
+- `courses/poe/lessons/unit-3-lesson-01.html`
+- `courses/poe/lessons/unit-3-lesson-02.html`
+- `courses/poe/lessons/unit-3-lesson-03.html`
+- `courses/poe/lessons/unit-3-lesson-04.html`
+- `courses/poe/lessons/unit-3-lesson-05.html`
+- `courses/poe/lessons/unit-3-lesson-06.html`
+- `courses/poe/lessons/unit-3-lesson-07.html`
+- `courses/poe/lessons/unit-3-lesson-08.html`
+- `courses/poe/lessons/unit-3-lesson-09.html`
+- `courses/poe/lessons/unit-3-lesson-10.html`
+- `courses/poe/lessons/unit-3-lesson-11.html`
+- `courses/poe/lessons/unit-3-lesson-12.html`
+- `courses/poe/lessons/unit-3-lesson-13.html`
+- `courses/poe/lessons/unit-3-lesson-14.html`
+- `courses/poe/lessons/unit-3-lesson-15.html`
+- `courses/poe/lessons/unit-3-lesson-16.html`
+- `courses/poe/lessons/unit-3-lesson-17.html`
+- `courses/poe/lessons/unit-3-lesson-18.html`
+- `courses/poe/lessons/unit-4-lesson-01.html`
+- `courses/poe/lessons/unit-4-lesson-02.html`
+- `courses/poe/lessons/unit-4-lesson-03.html`
+- `courses/poe/lessons/unit-4-lesson-04.html`
+- `courses/poe/lessons/unit-4-lesson-05.html`
+- `courses/poe/lessons/unit-4-lesson-06.html`
+- `courses/poe/lessons/unit-4-lesson-07.html`
+- `courses/poe/lessons/unit-4-lesson-08.html`
+- `courses/poe/lessons/unit-4-lesson-09.html`
+- `courses/poe/lessons/unit-4-lesson-10.html`
+- `courses/poe/lessons/unit-4-lesson-11.html`
+- `courses/poe/lessons/unit-4-lesson-12.html`
+- `courses/poe/lessons/unit-4-lesson-13.html`
+- `courses/poe/lessons/unit-4-lesson-14.html`
+- `courses/poe/lessons/unit-4-lesson-15.html`
+- `courses/poe/lessons/unit-4-lesson-16.html`
+- `courses/poe/lessons/unit-4-lesson-17.html`
+- `courses/poe/lessons/unit-4-lesson-18.html`
+- `courses/poe/lessons/unit-5-lesson-01.html`
+- `courses/poe/lessons/unit-5-lesson-02.html`
+- `courses/poe/lessons/unit-5-lesson-03.html`
+- `courses/poe/lessons/unit-5-lesson-04.html`
+- `courses/poe/lessons/unit-5-lesson-05.html`
+- `courses/poe/lessons/unit-5-lesson-06.html`
+- `courses/poe/lessons/unit-5-lesson-07.html`
+- `courses/poe/lessons/unit-5-lesson-08.html`
+- `courses/poe/lessons/unit-5-lesson-09.html`
+- `courses/poe/lessons/unit-5-lesson-10.html`
+- `courses/poe/lessons/unit-5-lesson-11.html`
+- `courses/poe/lessons/unit-5-lesson-12.html`
+- `courses/poe/lessons/unit-5-lesson-13.html`
+- `courses/poe/lessons/unit-5-lesson-14.html`
+- `courses/poe/lessons/unit-5-lesson-15.html`
+- `courses/poe/lessons/unit-5-lesson-16.html`
+- `courses/poe/lessons/unit-5-lesson-17.html`
+- `courses/poe/lessons/unit-5-lesson-18.html`
+
+## Files renamed
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Unit3_Autonomous_Rover_Mission_Ground_Support_System_Brief.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Unit3_Autonomous_Rover_Mission_Ground_Support_System_Brief.pdf`
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Unit5_Integrated_Aerospace_Rover_Systems_Capstone_Brief.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Unit5_Integrated_Aerospace_Rover_Systems_Capstone_Brief.pdf`
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Unit2_Rover_Payload_Support_Structure_Challenge_Brief.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Unit2_Rover_Payload_Support_Structure_Challenge_Brief.pdf`
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Unit4_Rover_Performance_Data_Investigation_Brief.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Unit4_Rover_Performance_Data_Investigation_Brief.pdf`
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Aerospace_Rover_Systems_Engineering_Build_Guide.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Aerospace_Rover_Systems_Engineering_Build_Guide.pdf`
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Unit0_Aerospace_Readiness_Mini_Challenge_Brief.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Unit0_Aerospace_Readiness_Mini_Challenge_Brief.pdf`
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Unit1_VEX_Rover_Mechanisms_Challenge_Brief.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Unit1_VEX_Rover_Mechanisms_Challenge_Brief.pdf`
+- `downloads/project-briefs/aerospace-systems-engineering/POE_Project_Brief_Packet.pdf` → `downloads/project-briefs/aerospace-systems-engineering/POE_Project_Brief_Packet.pdf`
+- `downloads/packages/LockwoodSTEM_POE_Common_Template_Pack.zip` → `downloads/packages/LockwoodSTEM_POE_Common_Template_Pack.zip`
+- `HOMEPAGE_POE_UNIT0_BUTTON_REMOVED.md` → `HOMEPAGE_POE_UNIT0_BUTTON_REMOVED.md`
+
+## Remaining POE hits
+- `AGENDA_COURSE_NAMES_FIX_REPORT.md` line 30: "POE": [
+- `HOMEPAGE_POE_UNIT0_BUTTON_REMOVED.md` line 8: - `\s*<a\b[^>]*>[^<]*(?:POE\s*Unit\s*0|Unit\s*0\s*POE|Aerospace...`: 0
+- `HOMEPAGE_POE_UNIT0_BUTTON_REMOVED.md` line 9: - `\s*<article\b(?:(?!</article>).)*?(?:POE\s*Unit\s*0|Unit\s*0...`: 0
+- `assets/js/agenda-config.js` line 20: POE: ["POE"],
+- `assets/js/agenda.js` line 5: const legacyCourseAliases = config.legacyCourseAliases || { IED: ["AED"], POE: ["POE"], ADM: ["AM"] };
+
+## Broken local links/resources
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Project_Brief_Packet.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Aerospace_Rover_Systems_Engineering_Build_Guide.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Unit0_Aerospace_Readiness_Mini_Challenge_Brief.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Unit1_VEX_Rover_Mechanisms_Challenge_Brief.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Unit2_Rover_Payload_Support_Structure_Challenge_Brief.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Unit3_Autonomous_Rover_Mission_Ground_Support_System_Brief.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Unit4_Rover_Performance_Data_Investigation_Brief.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Unit5_Integrated_Aerospace_Rover_Systems_Capstone_Brief.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Project_Brief_Packet.pdf`
+- `courses/poe/index.html` → `../../downloads/project-briefs/poe/POE_Aerospace_Rover_Systems_Engineering_Build_Guide.pdf`
+- `courses/poe/units/unit-0.html` → `../../../downloads/project-briefs/poe/POE_Unit0_Aerospace_Readiness_Mini_Challenge_Brief.pdf`
+- `courses/poe/units/unit-1.html` → `../../../downloads/project-briefs/poe/POE_Unit1_VEX_Rover_Mechanisms_Challenge_Brief.pdf`
+- `courses/poe/units/unit-1.html` → `../../../downloads/project-briefs/poe/POE_Unit1_VEX_Rover_Mechanisms_Challenge_Brief.pdf`
+- `courses/poe/units/unit-2.html` → `../../../downloads/project-briefs/poe/POE_Unit2_Rover_Payload_Support_Structure_Challenge_Brief.pdf`
+- `courses/poe/units/unit-3.html` → `../../../downloads/project-briefs/poe/POE_Unit3_Autonomous_Rover_Mission_Ground_Support_System_Brief.pdf`
+- `courses/poe/units/unit-3.html` → `../../../downloads/project-briefs/poe/POE_Aerospace_Rover_Systems_Engineering_Build_Guide.pdf`
+- `courses/poe/units/unit-4.html` → `../../../downloads/project-briefs/poe/POE_Unit4_Rover_Performance_Data_Investigation_Brief.pdf`
+- `courses/poe/units/unit-5.html` → `../../../downloads/project-briefs/poe/POE_Unit5_Integrated_Aerospace_Rover_Systems_Capstone_Brief.pdf`
+- `courses/poe/units/unit-5.html` → `../../../downloads/project-briefs/poe/POE_Aerospace_Rover_Systems_Engineering_Build_Guide.pdf`

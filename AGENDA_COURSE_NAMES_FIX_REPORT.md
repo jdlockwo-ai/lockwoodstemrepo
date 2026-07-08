@@ -18,7 +18,7 @@ Updated the Google Sheets agenda system to use the current course names.
 
 ## Compatibility
 
-The JavaScript still supports old CSV aliases if an older config uses AED, ASE, or AM keys.
+The JavaScript still supports old CSV aliases if an older config uses AED, POE, or AM keys.
 
 ## Old key references left intentionally
 
@@ -27,7 +27,7 @@ The JavaScript still supports old CSV aliases if an older config uses AED, ASE, 
     "assets/js/agenda-config.js",
     "assets/js/agenda.js"
   ],
-  "ASE": [
+  "POE": [
     "assets/js/agenda-config.js",
     "assets/js/agenda.js"
   ],
